@@ -13,13 +13,19 @@ https://gist.github.com/bradtraversy/aab26d1e8983d9f8d79be1a9ca894ab4
 Install ESLint & Prettier extensions for VSCode
 Optional - Set format on save and any global prettier options
 
-2. Install Packages
-   npm i -D eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
-   npx install-peerdeps --dev eslint-config-airbnb
-3. Create .prettierrc for any prettier rules (semicolons, quotes, etc)
-4. eslint --init
-
----
+1.  Install Packages
+    npm i -D eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
+    npx install-peerdeps --dev eslint-config-airbnb
+2.  Create .prettierrc for any prettier rules (semicolons, quotes, etc)
+3.  Install eslint globally.
+    npm install -g eslint@5.16.0
+4.  generate .eslintrc.json file :
+    eslint --init
+5.  Make following changes in .eslintrc.json
+    > > "extends": ["airbnb", "prettier"]
+    > > "rules": {
+          "no-unused-vars":"warn"
+    }
 
 Unit,Snapshot Testing:
 Using Jest (unit, snapshot testing) with create-react-app:
