@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Person from "./Person";
-
 import "./styles.css";
 
 class App extends Component {
@@ -57,10 +56,7 @@ class App extends Component {
         <button onClick={this.switchNameHandler.bind(this, "Ramavatar")}>
           Switch name
         </button>
-        <Person
-          name={this.state.persons[0].name}
-          age={this.state.persons[0].age}
-        />
+
         {/* Add a property 'click' and pass ref to handler click={this.SwitchNameHandler} */}
         <Person
           name={this.state.persons[1].name}
@@ -72,10 +68,7 @@ class App extends Component {
         >
           My Hobby : TT
         </Person>
-        <Person
-          name={this.state.persons[2].name}
-          age={this.state.persons[2].age}
-        />
+
       </div>
     );
   }

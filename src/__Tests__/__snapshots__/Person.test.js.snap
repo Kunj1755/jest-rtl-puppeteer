@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person renders with name and age props 1`] = `
+<div>
+  <p
+    onClick={[Function]}
+  >
+    I'm a person and My name is 
+    Ram
+     and I am 
+    30
+     years old
+  </p>
+  <p>
+     
+    I am a person
+  </p>
+  <p>
+    0
+  </p>
+  <input
+    type="text"
+  />
+</div>
+`;
+
+exports[`Person renders without crashing 1`] = `
+<div>
+  <p
+    onClick={[Function]}
+  >
+    I'm a person and My name is 
+     and I am 
+     years old
+  </p>
+  <p>
+     
+    I am a person
+  </p>
+  <p>
+    0
+  </p>
+  <input
+    type="text"
+  />
+</div>
+`;
+
+exports[`Person renders without crashing 2 1`] = `
+<div>
+  <p
+    onClick={[Function]}
+  >
+    I'm a person and My name is 
+     and I am 
+     years old
+  </p>
+  <p>
+     
+    I am a person
+  </p>
+  <p>
+    0
+  </p>
+  <input
+    type="text"
+  />
+</div>
+`;
