@@ -14,6 +14,7 @@ const personCompProps = {
 
 };
 
+
 test("Person renders without crashing", () => {
     const testRenderer = TestRenderer.create(<Person>I am a person</Person>);
     const tree = testRenderer.toJSON();
